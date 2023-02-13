@@ -1,0 +1,184 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li{list-style: none;}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.insta{
+  position: relative;
+  width: 350px;
+  height: 480px;
+  border: 1px solid #aaa;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.insta img{
+  width: 50%;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.input-list{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-bottom: 90px;
+}
+
+.input-list input{
+  padding: 13px;
+  margin-bottom: 5px;
+  border: 1px solid #AAA;
+}
+
+.input-list button {
+  padding: 7px;
+  color: #FFF;
+  background-color: dodgerblue;
+  border: none;
+  opacity: .3;
+  margin-top: 5px;
+}
+
+.line{
+  display: flex;
+  align-items: center;
+  width: 88%;
+  margin: 0 auto;
+  font-size: 12px;
+  /* margin-top: 20px; */
+  padding: 40px 0;
+}
+
+.line::before {
+  content: '';
+  flex-grow: 1;
+  margin: 0px 20px;
+  background-color: #AAA;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.line::after {
+  content: '';
+  flex-grow: 1;
+  margin: 0px 20px;
+  background-color: #AAA;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.text-list{
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 80px;
+  transform: translate(-50%);
+}
+
+
+
+.text-list a p{
+  color: darkblue;
+  font-weight: 700;
+}
+
+.pw{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.pw a p{
+  color: rgb(68, 141, 214);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.login{
+  position: relative;
+  width: 350px;
+  height: 80px;
+  align-items: center;
+  border: 1px solid #AAA;
+  margin: -40px auto;
+  margin-bottom: 20px;
+}
+
+.login-text{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.login P:last-child{
+  color: dodgerblue;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.app-text{
+  width: 350px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.app-button{
+  width: 300px;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.app-button button{
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.app-button img{
+  width: 100%;
+  height: 50px;
+}
+
+
+.footer-list{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.footer-list ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-text{
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
