@@ -84,9 +84,18 @@ a{
 .text-list{
   position: absolute;
   display: flex;
-  left: 50%;
+  left: 30%;
   bottom: 80px;
-  transform: translate(-50%);
+  width: 80%;
+  align-items: center;
+}
+
+.text-list img{
+  position: absolute;
+  top: -27px;
+  left: -20px;
+  width: 15px;
+  height: 15px;
 }
 
 
@@ -101,7 +110,9 @@ a{
   bottom: 20px;
   left: 50%;
   transform: translate(-50%);
+  display: flex;
 }
+
 
 .pw a p{
   color: rgb(68, 141, 214);
@@ -173,6 +184,11 @@ a{
   justify-content: space-between;
 }
 
+.footer-list button{
+  border: none;
+  background-color: transparent;
+}
+
 .last-text{
   position: absolute;
   bottom: 40px;
@@ -182,3 +198,31 @@ a{
   justify-content: center;
   margin-top: 40px;
 }
+
+.text-black{
+  color: #000;
+}
+
+
+body.dark{
+  background-color: #151515;
+}
+
+
+.insta.dark,
+.box.dark,
+.box1.dark,
+.login.dark{
+  background-color: #151515;
+  border: 1px solid #262626;
+  color: #d2d2d2;
+}
+
+.app-text p.dark,
+.footer-list a.dark,
+.footer-list button.dark,
+.last-text.dark
+{
+  color: #d2d2d2;
+}
+
