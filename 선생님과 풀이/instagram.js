@@ -46,6 +46,46 @@ document.querySelectorAll('.animate-input').forEach((e) => {
   }
 })
 
+
+//정규식으로 변환
+
+// document.querySelectorAll('.animate-input').forEach((e) => {
+//   // e : .animate-input이라는 class
+//   let input = e.querySelector('input');
+//   let button = e.querySelector('button');
+
+//   // onkeyup
+//   // 사용자가 키보드의 키를 눌렀다가 떼었을 때 발생하는 이벤트
+//   // trim() : 공백을 제거하는 함수
+//   input.onkeyup = () => {
+//     if(/^\s*$/.test(input.value)) {
+//       e.classList.remove('active');
+//     } else {
+//       e.classList.add('active');
+//     }
+
+//     if(!/^\s*$/.test(input.value)) {
+//       btn_login.removeAttribute('disabled');
+//     } else {
+//       btn_login.setAttribute('disabled', 'true');
+//     }
+//   }
+
+//   // 비밀번호 표시 / 숨기기
+//   if(button) {
+//     button.onclick = () => {
+//       if(input.getAttribute('type') === "text") {
+//         input.setAttribute('type' , 'password');
+//         button.innerHTML = "비밀번호 표시";
+//       } else {
+//         input.setAttribute('type' , 'text');
+//         button.innerHTML = "비밀번호 숨기기";
+//       }
+//     }
+//   }
+// })
+
+
 // darkmode toggle
 darkmode_toggle.onclick = (e) => {
   e.preventDefault();
@@ -54,4 +94,8 @@ darkmode_toggle.onclick = (e) => {
 
   // 삼항연산자
   darkmode_toggle.innerHTML = body.classList.contains('dark') ? 'Lightmode' : 'Darkmode'; 
+
+  // 이항연산자
+  // darkmode_toggle.innerHTML = (body.classList.contains('dark') && 'Lightmode') || 'Darkmode';
+
 }
