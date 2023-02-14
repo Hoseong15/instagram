@@ -1,10 +1,3 @@
-// $("#box2").focusout(function() {
-//   if($(this).val() == '') {
-//     $(this).next('div').html('<span class= "text-black">비밀번호 표시</span>')
-//   }
-// })
-
-
 let button = document.querySelector('.dark');
 let inputdark = document.querySelector('.insta')
 let box = document.querySelector('.box');
@@ -24,10 +17,6 @@ button.addEventListener('click', function() {
   last.classList.toggle('dark')
   document.querySelector('.logo a>img').src = "./images/logo-dark.png"
 })
-
-
-
-
 
 const buttons = document.querySelector(".dark");
 const list = document.querySelectorAll(".footer-list a");
